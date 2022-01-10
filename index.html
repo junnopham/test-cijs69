@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Short Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900">
+    <div class="flex h-screen">
+      <div class="m-auto w-2/5 h-72 bg-white rounded-3xl p-4">
+        <form id="form">
+          <h3 class="text-center text-3xl font-semibold">URL Shortener</h3>
+          <div class="mt-4">
+            <label for="url" class="block text-sm font-medium text-gray-700"
+              >Enter a URL:</label
+            >
+            <div class="mt-1 relative rounded-md shadow-sm">
+              <div
+                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+              >
+                <img src="/img//url.png" class="w-4" alt="url" />
+              </div>
+              <input
+                type="text"
+                id="url"
+                class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-9 pr-20 sm:text-sm border-gray-300 rounded-md shadow appearance-none border rounded w-full py-2 px-3"
+                placeholder="URL"
+              />
+              <div class="absolute inset-y-0 right-0 flex items-center">
+                <button
+                  type="submit"
+                  class="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-2 border-transparent bg-transperant hover:bg-indigo-700 hover:text-white text-black sm:text-sm rounded-md text-center"
+                >
+                  Shorten
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="mt-10" id="short_url">
+          <h3 class="text-center text-3xl font-semibold">Your short url:</h3>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
